@@ -2,27 +2,27 @@
     "rewrites": [
       {
         "source": "/register-user-server",
-        "destination": "https://presidio-rentify-backend.vercel.app/post-signup"
+        "destination": "https://presidio-rentify-backend.vercel.app/register-user-server"
       },
       {
-        "source": "/login-user-server",
-        "destination": "https://presidio-rentify-backend.vercel.app/post-login"
+        "source": "/register-user-server",
+        "destination": "https://presidio-rentify-backend.vercel.app/register-user-server/"
       },
       {
-        "source": "/register-property-server",
-        "destination": "https://presidio-rentify-backend.vercel.app/api/posts/:userId"
+        "source": "/register-user-server",
+        "destination": "https://presidio-rentify-backend.vercel.app/register-user-server"
       },
       {
         "source": "/update-property-server",
-        "destination": "https://presidio-rentify-backend.vercel.app/server-create-post"
+        "destination": "https://presidio-rentify-backend.vercel.app/update-property-server"
       },
       {
         "source": "/api/get-properties",
-        "destination": "https://presidio-rentify-backend.vercel.app/update-post"
+        "destination": "https://presidio-rentify-backend.vercel.app/api/get-properties"
       },
       {
         "source": "/delete-property-server/:propertyId",
-        "destination": "https://presidio-rentify-backend.vercel.app/api/delete-post/:propertyId"
+        "destination": "https://presidio-rentify-backend.vercel.app/delete-property-server/:propertyId"
       }
     ]
   }
