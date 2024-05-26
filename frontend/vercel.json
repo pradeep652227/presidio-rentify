@@ -2,31 +2,27 @@
     "rewrites": [
       {
         "source": "/register-user-server",
-        "destination": "https://blog-app-backend-navy-beta.vercel.app/post-signup"
+        "destination": "https://presidio-rentify-backend.vercel.app/post-signup"
       },
       {
         "source": "/login-user-server",
-        "destination": "https://blog-app-backend-navy-beta.vercel.app/post-login"
+        "destination": "https://presidio-rentify-backend.vercel.app/post-login"
       },
       {
-        "source": "/api/posts/:userId",
-        "destination": "https://blog-app-backend-navy-beta.vercel.app/api/posts/:userId"
+        "source": "/register-property-server",
+        "destination": "https://presidio-rentify-backend.vercel.app/api/posts/:userId"
       },
       {
-        "source": "/server-create-post",
-        "destination": "https://blog-app-backend-navy-beta.vercel.app/server-create-post"
+        "source": "/update-property-server",
+        "destination": "https://presidio-rentify-backend.vercel.app/server-create-post"
       },
       {
-        "source": "/update-post",
-        "destination": "https://blog-app-backend-navy-beta.vercel.app/update-post"
+        "source": "/api/get-properties",
+        "destination": "https://presidio-rentify-backend.vercel.app/update-post"
       },
       {
-        "source": "/api/delete-post/:postId",
-        "destination": "https://blog-app-backend-navy-beta.vercel.app/api/delete-post/:postId"
-      },
-      {
-        "source": "/api/delete-image/:image",
-        "destination": "https://blog-app-backend-navy-beta.vercel.app//api/delete-image/:image"
+        "source": "/delete-property-server/:propertyId",
+        "destination": "https://presidio-rentify-backend.vercel.app/api/delete-post/:propertyId"
       }
     ]
   }
