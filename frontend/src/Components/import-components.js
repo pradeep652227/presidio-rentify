@@ -6,3 +6,6 @@ export {default as Input} from "./Reusables/Input";
 export {default as Loading} from "./Reusables/Loading";
 export {default as Signup} from "./Authentication/Signup";
 export {default as Login} from "./Authentication/Login";
+export {default as PropertyForm} from "./PropertyForm";
+export {default as Properties} from "./Properties";
+export {default as Property} from "./Property";

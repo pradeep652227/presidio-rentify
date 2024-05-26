@@ -5,11 +5,12 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "../import-components";
 import { logout } from "../../features/authSlice";
 import { clearProperties } from "../../features/propertiesSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const isLogged = useSelector((state) => state.auth.isLogged);
   const dispatch = useDispatch();
-
+  const navigateTo=useNavigate();
   const options = [
     {
       name: "Home",
@@ -55,6 +56,7 @@ export default function Header() {
                   onClick={() => {
                     dispatch(logout());
                     dispatch(clearProperties());
+                    navigateTo("/");
                   }}
                 >
                   Logout

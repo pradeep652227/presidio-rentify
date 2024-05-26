@@ -8,6 +8,10 @@ export default defineConfig({
     proxy:{
       '/register-user-server':'http://localhost:3000',
       '/login-user-server':'http://localhost:3000',
+      '/register-property-server':'http://localhost:3000',
+      '/update-property-server':'http://localhost:3000',
+      '/api/get-properties':'http://localhost:3000',
+      '/delete-property-server/':'http://localhost:3000',
     }
   }
 })

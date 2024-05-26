@@ -10,12 +10,14 @@ const propertySchema = mongoose.Schema({
   state: { type: String, required: true },
   area: { type: String, required: true },
   pin_code: { type: Number, required: true },
+  price:{type:String, required:true},
   slug:String,
   number_bedrooms: Number,
   number_bathrooms: Number,
   hospitals: Number,
   schools: Number,
   colleges: Number,
+  listedBy:String
 });
 
 const userSchema = mongoose.Schema({

@@ -79,8 +79,9 @@ app.post("/register-property-server", (req, res) => {
   const user_role = propertyData.user_role;
   if (user_role !== "seller")
     res.status(400).json({ message: "Only Seller User can list a property" });
-
-  const user_email = propertyData.email;
+  let slug=propertyData.place+"_"+Math.floor(Math.random()*1000);
+  propertyData["slug"]=slug;
+  const user_email = propertyData.createdBy;
   //register property and then embed it in the appropriate user document
   Property.create(propertyData)
     .then((property) => {

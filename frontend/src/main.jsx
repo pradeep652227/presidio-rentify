@@ -23,6 +23,10 @@ const router = createBrowserRouter(
       <Route path="" element={<Protected authentication={false}><Pages.Home /></Protected>} />
       <Route path="signup" element={<Protected authentication={false}><Components.Signup /></Protected>} />
       <Route path="login" element={<Protected authentication={false}><Components.Login /></Protected>} />
+      <Route path="list-property" element={<Protected authentication={true}><Pages.ListProperty /></Protected>} />
+      <Route path="/properties" element={<Protected authentication={true}><Components.Properties /></Protected>} />
+      <Route path="/properties/:slug" element={<Protected authentication={true}><Components.Property /></Protected>} />
+      <Route path="/edit-property/:slug" element={<Protected authentication={true}><Pages.EditProperty /></Protected>} />
     </Route>
   )
 );
